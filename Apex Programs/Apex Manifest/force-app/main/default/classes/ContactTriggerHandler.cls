@@ -1,6 +1,6 @@
 public with sharing class ContactTriggerHandler {
     //Task of Mentor 2
-    public static void countConRelToAcc(List<Contact>newCon,List<Contact>oldCon){
+    public static void countConRelToAcc(List<Contact> newCon,List<Contact> oldCon){
         Set <Id> accIds=new Set<Id>();
         if(newCon!=NULL){
             for(Contact con:newCon){

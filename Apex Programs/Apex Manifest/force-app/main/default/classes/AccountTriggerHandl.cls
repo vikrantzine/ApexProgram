@@ -81,7 +81,7 @@ public with sharing class AccountTriggerHandl {
         }
     }
     //Task of Mentor 1
-    public static void updateDescription(List<Account>accList){
+    public static void updateDescription(List<Account> accList){
         for(Account acc:accList){
             if(acc.Name!=NULL || acc.AccountNumber!=NULL || acc.Industry!=NULL){
                 acc.Description='Test Account:' + acc.Name + ' Account Number:' + acc.AccountNumber + ' Industry:' + acc.Industry;

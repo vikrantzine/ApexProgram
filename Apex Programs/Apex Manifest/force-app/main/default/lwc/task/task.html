@@ -1,0 +1,23 @@
+<template>
+    <div class="rating-section">
+        <h1>Rating</h1>
+        <div class="rating-value">
+            <span class="rating-code">{ratingCode}</span>
+            <span class="risk-level {riskClass}">{riskLevel}</span>
+        </div>
+        <p class="embarrassment">⚠️ {financialEmbarrassment}</p>
+    </div>
+
+    <div class="score-section">
+        <div class="failure-score">
+            <label>Failure Score National Percentile</label><br/>
+            <span class="score-value">{failureScore}</span>
+        </div>
+
+        <div class="payment-behaviour">
+            <label>Payment Behaviour</label><br/>
+            <span class="days-beyond">{paymentDays}</span>
+            <label>days beyond terms</label>
+        </div>
+    </div>
+</template>

@@ -5,7 +5,7 @@ trigger AccountTrigger on Account (before insert,before update,before delete,aft
             AccountTriggerHandl.convertBillingToShipping(Trigger.New);  //Question 1
         }
         if(Trigger.isInsert || Trigger.isUpdate){
-            AccountTriggerHandl.updateDescription(Trigger.New);  //Mentor Task
+            AccountTriggerHandl.updateDescription(Trigger.New);  //Mentor Task 1
         }
         if(Trigger.isUpdate){
             AccountTriggerHandl.updateEngineeringToFinance(Trigger.New,Trigger.oldMap);  //Question 2
