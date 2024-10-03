@@ -1,60 +1,80 @@
-.rating-section {
+.credit-risk-container {
+    font-family: Arial, sans-serif;
     padding: 20px;
-    border: 1px solid #fff5f5;
-    background-color: rgb(255, 255, 255);
+    background-color: #f9f9f9;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.rating-value {
+.left-block, .right-block {
+    padding: 20px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.rating-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rating-high-risk {
     display: flex;
     align-items: center;
 }
 
-.rating-code {
+.rating-high-risk h1 {
     font-size: 24px;
+    font-weight: bold;
     margin-right: 10px;
-    color: black;
 }
+
 
 .high-risk {
+    display: inline-block;
     background-color: red;
-    color: white;
     padding: 5px;
-    font-weight: bold;
+    color: white;
+    text-align: end;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.embarrassment {
+.financial-embarrassment {
+    display: inline-block;
     background-color: orange;
-    color: white;
     padding: 5px;
-    font-weight: bold;
+    color: black;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 
-.score-section {
+.bottom-block {
     display: flex;
     justify-content: space-between;
 }
 
 .failure-score, .payment-behaviour {
-    width: 45%;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.failure-score {
-    background-color: rgb(147, 212, 147);
-    color: black;
+    background-color: rgb(173, 230, 186);
+    color: #006600;
+    padding: 20px;
+    border-radius: 5px;
+    width: 48%;
 }
 
 .payment-behaviour {
-    background-color: rgb(157, 0, 0);
-    color: white;
+    background-color: #d21414;
+    color: #f9f9f9;
 }
 
-.score-value {
-    font-size: 36px;
+.failure-score p, .payment-behaviour p {
+    font-weight: bold;
 }
 
-.days-beyond {
-    font-size: 24px;
+.failure-score h2, .payment-behaviour h2 {
+    font-size: 20px;
+    font-weight: bold;
 }

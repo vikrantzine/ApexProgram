@@ -1,23 +1,28 @@
 <template>
-    <div class="rating-section">
-        <h1>Rating</h1>
-        <div class="rating-value">
-            <span class="rating-code">{ratingCode}</span>
-            <span class="risk-level {riskClass}">{riskLevel}</span>
+    <div class="credit-risk-container">
+        <div class="top-section">
+            <div class="left-block">
+                <p class="rating-text">Rating</p>
+                <div class="rating-high-risk">
+                    <h1 style="font-size: 60px;">5AA4</h1>
+                    <p class="high-risk" style="font-size: 12px;"> High Risk </p>
+                </div>
+                <p class="financial-embarrassment">⚠️ Financial Embarrassment Present</p>
+            </div>
+            <div class="right-block"><br/><br/>
+                <p>High risk - Get payment guarantees before extending credit, or request pre-payment.</p>
+                <p>This entity has outstanding Capital (Over 55M€).</p>
+            </div>
         </div>
-        <p class="embarrassment">⚠️ {financialEmbarrassment}</p>
-    </div>
-
-    <div class="score-section">
-        <div class="failure-score">
-            <label>Failure Score National Percentile</label><br/>
-            <span class="score-value">{failureScore}</span>
-        </div>
-
-        <div class="payment-behaviour">
-            <label>Payment Behaviour</label><br/>
-            <span class="days-beyond">{paymentDays}</span>
-            <label>days beyond terms</label>
+        <div class="bottom-block">
+            <div class="failure-score">
+                <p style="color: black;">Failure Score National Percentile</p>
+                <h2 style="font-size: 30px;">78</h2>
+            </div>
+            <div class="payment-behaviour">
+                <p>Payment Behaviour</p>
+                <h2 style="font-size: small;"><span style="font-size: xx-large;" >35</span> days beyond terms</h2>
+            </div>
         </div>
     </div>
 </template>
